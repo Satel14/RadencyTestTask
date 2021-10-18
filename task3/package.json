@@ -1,0 +1,26 @@
+{
+  "name": "radency-notes-api",
+  "version": "1.0.0",
+  "description": " task3 for internship at RADENCY (Full-Stack developer)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixel-pixel/RADENCY-test-tasks/tree/main/task3"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "api",
+    "js"
+  ],
+  "author": "pixel-pixel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "yup": "^0.32.9"
+  }
+}

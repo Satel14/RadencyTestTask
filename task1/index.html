@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Task 1</title>
+</head>
+
+<body>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <form id="InputData">
+                <p class="title-create">Enter these notes</p>
+                <div class="form-cont">
+                <p>Name</p>
+                <input name="name" type="text"></div>
+                <div class="form-cont">
+                <p>Description</p>
+               
+                <input name="context" type="text"></div>
+                <div class="form-cont">
+                <select name="category">
+                    <option value="Task">Task</option>
+                    <option value="Random Thought">Random Thought</option>
+                    <option value="Idea">Idea</option>
+
+                </select>
+            </div>
+                <input id="form-submit-button" type="submit" value="Add">
+            </form>
+
+            <span id="close" class="close">&times;</span>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div id="Change_modal" class="modal">
+        <div class="modal-content">
+            <form id="Change_date">
+                <p class="title-create">Input new date</p>
+                <input name="date" type="date" min="" max=""style="
+                margin-left: 300px;
+            ">
+                <input type="submit" value="Add">
+            </form>
+
+            <span id="closeChangeMenu" class="close">&times;</span>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <div class="todo-wrapper">
+        <div class="todo-list-wrapper">
+            <div class="todo-header">
+                <ul class="header-line header-Tags">
+                    <li>Name</li>
+                    <li>Created</li>
+                    <li>Category</li>
+                    <li>Content</li>
+                    <li>Dates</li>
+                </ul>
+                <ul class="header-line-buttons">
+                    <li><button id="button-archive"><img class="Delete_button" src="./img2/archive.png"></button> </li>
+                    <li><button id="delete-button">
+                            <img class="Delete_button" src="./img2/file.png"></img></li>
+                </ul>
+
+            </div>
+            <div class="todo-list">
+
+
+
+            </div>
+        </div>
+        <div class="button-create-wraper">
+        <button id="todo-button-create">Create Note</button></div>
+        <div class="todo-list-wrapper">
+            <div id="show-archive">Show Acrhive  </div></div>
+            <div class="todo-wrapper-info todo-wrapper-info-unactive">
+
+            </div>
+            <div class="todo-info-notes">
+                <div class="header-line-info">
+
+                    <ul class="header-line header-line-info-lst">
+
+                        <li>Category</li>
+
+                    </ul>
+                    <ul class="Status-notes">
+                        <li>Active</li>
+                        <li>Archived</li>
+                        
+                    </ul>
+                </div>
+                <div class="header-line-info header-line-info-item">
+                    <img src="./img/question.png" alt="">
+                    <ul class="header-line header-line-info-lst">
+
+                        <li>Random Thoughts</li>
+
+                    </ul>
+                    <ul class="Status-notes  Status-notes-items">
+                        <li id="Random-active"></li>
+                        <li id="Random-archive"></li>
+                    </ul>
+                </div>
+                <div class="header-line-info header-line-info-item">
+                    <img src="./img/idea.png" alt="">
+
+                    <ul class="header-line header-line-info-lst">
+
+                        <li>Idea</li>
+
+                    </ul>
+                    <ul class="Status-notes  Status-notes-items">
+                        <li id="Idea-active"></li>
+                        <li id="Idea-archive"></li>
+                    </ul>
+                </div>
+                <div class="header-line-info header-line-info-item">
+                    <img src="./img/task.png" alt="">
+
+                    <ul class="header-line header-line-info-lst">
+
+                        <li>Task</li>
+
+                    </ul>
+                    <ul class="Status-notes Status-notes-items">
+                        <li id="Task-active"></li>
+                        <li id="Task-archive"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
